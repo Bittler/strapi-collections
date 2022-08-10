@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "balances",
+  "info": {
+    "name": "Balances",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "customer": {
+      "model": "customers"
+    },
+    "balance": {
+      "type": "float"
+    },
+    "currency": {
+      "type": "enumeration",
+      "enum": [
+        "BTC",
+        "BRL"
+      ],
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customers",
+  "info": {
+    "name": "Customers",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email"
+    },
+    "password": {
+      "type": "password",
+      "required": true,
+      "minLength": 6,
+      "private": false
+    },
+    "blocked": {
+      "type": "boolean",
+      "default": false
+    },
+    "verified": {
+      "type": "boolean",
+      "default": false
+    },
+    "username": {
+      "type": "string",
+      "required": true,
+      "maxLength": 16,
+      "unique": true,
+      "minLength": 6
+    }
+  }
+}
