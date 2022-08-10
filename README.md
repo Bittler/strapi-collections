@@ -1,1 +1,1 @@
-# strapi-collections
+# Strapi Colletion
